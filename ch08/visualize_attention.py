@@ -22,6 +22,8 @@ model = AttentionSeq2seq(vocab_size, wordvec_size, hidden_size)
 model.load_params()
 
 _idx = 0
+
+
 def visualize(attention_map, row_labels, column_labels):
     fig, ax = plt.subplots()
     ax.pcolor(attention_map, cmap=plt.cm.Greys_r, vmin=0.0, vmax=1.0)
