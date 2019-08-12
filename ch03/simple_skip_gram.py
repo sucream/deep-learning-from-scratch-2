@@ -28,6 +28,7 @@ class SimpleSkipGram:
 
         # 인스턴스 변수에 단어의 분산 표현을 저장한다.
         self.word_vecs = W_in
+        self.word_vecs_out = W_out.T
 
     def forward(self, contexts, target):
         h = self.in_layer.forward(target)
